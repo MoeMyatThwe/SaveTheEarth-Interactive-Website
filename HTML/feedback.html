@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../CSS/feedback.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="../Javascript/feedback.js" defer></script>
+  <title>Feed Back</title>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow p-4 mb-4">
+    <div class="container-fluid">  
+            <a class="navbar-brand" href="#">
+                <img src="../Images/earth2.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+            </a>
+        
+        <button class="navbar-toggler togglersize" type="button" data-bs-toggle="collapse" data-bs-target="#collapsed-container">
+            <span class="navbar-toggler-icon"></span>        
+        </button>
+        <div class="collapse navbar-collapse" id="collapsed-container">
+            
+        <ul class="navbar-nav me-auto">
+            
+            <li class=" nav-item dropdown" >
+                    
+                <a class="nav-link active dropdown-toggle text-uppercase" data-bs-toggle="dropdown" href="../HTML/index.html">home</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="../HTML/index.html">HOME</a>
+                    <a class="dropdown-item" href="./../HTML/index.html#intro">Intro</a>
+                    <a class="dropdown-item" href="./../HTML/index.html#tabledata">Environmental Problems</a>
+                    <a class="dropdown-item" href="./../HTML/index.html#Testimonials">Testimonials</a>
+                    
+                </div>
+            </li>
+            
+    
+            <li class=" nav-item dropdown " >
+                    
+                <a class="nav-link active dropdown-toggle text-uppercase" data-bs-toggle="dropdown" href="../HTML/aboutme.html">aboutme</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="../HTML/aboutme.html">ABOUT ME</a>
+                    <a class="dropdown-item" href="./../HTML/aboutme.html#mecard">Profile</a>
+                    <a class="dropdown-item" href="./../HTML/aboutme.html#PersonalGoals">PersonalGoals</a>
+                    <a class="dropdown-item" href="./../HTML/aboutme.html#values">Values</a>
+                    <a class="dropdown-item" href="./../HTML/aboutme.html#myinterest">My Interest</a>
+                    
+                </div>
+            </li>
+    
+            <li class=" nav-item dropdown " >
+                <a class="nav-link active dropdown-toggle text-uppercase" data-bs-toggle="dropdown" href="../HTML/SP.html">sp</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="../HTML/SP.html">SP</a>
+                    <a class="dropdown-item" href="./../HTML/SP.html#SPintention">SP Intention</a>
+                    <a class="dropdown-item" href="./../HTML/SP.html#SPaction">SP Actions</a>
+                    <a class="dropdown-item" href="./../HTML/SP.html#SPhasdone">What has SP done?</a>                   
+                </div>
+            </li>
+        
+            <li class=" nav-item dropdown " >
+                <a class="nav-link active dropdown-toggle text-uppercase" data-bs-toggle="dropdown" href="../HTML/feedback.html">feedback</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="../HTML/feedback.html">FEED BACK</a>
+                    <a class="dropdown-item" href="./../HTML/feedback.html#form">Form</a>
+                    <a class="dropdown-item" href="./../HTML/feedback.html#contact">Contact</a>
+                    <a class="dropdown-item" href="./../HTML/feedback.html#DailyMission">Daily Mission</a>
+                </div>
+            </li>
+    </ul>
+
+        <form class="d-flex ">
+            <input class="form-control me-2" type="text" placeholder="Search"> 
+            <button class="btn bg-danger-subtle" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+            </div>  
+    </div> 
+
+    </nav>
+
+
+<!-- form starts -->
+<section id="form">
+<div class="container-fluid bg-danger-subtle " style="margin-top: 20px;">
+    <div class="row">
+        <div class="col-sm-0 col-md-3"></div>
+        <form action="#" method="post" id="feedback" enctype="text/plain" class="d-grid mb-3 mt-5 gap-3 was-validated col-sm-12 col-md-6">
+            <h2 class="mt-5">Feedback Form</h2>
+            <div>
+                <label for="username" class="form-label ">Username</label>
+                <input name="username" class="form-control shadow" id="username" type="text" required />
+                <div class="invalid-feedback">Please fill in this field</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input name="email" class="form-control shadow" id="email" type="email" placeholder="mochiboba@gmail.com"
+                        required />
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <label for="password" class="form-label">Password</label>
+                    <input name="password" class="form-control shadow" id="password" type="password" required />
+                    <span class="form-text">Your password must be 8-20 characters long, contain letters and numbers.</span>
+                    <div class="alert alert-warning mt-3">
+                        <strong>Warning!</strong> must not contain spaces, special characters, or emoji.
+                        
+                      </div>
+                </div>
+            </div>
+            <div>
+                <label for="srsp">What do you think the most serious environmental problem is?</label>
+                
+                <select class="form-select shadow" name="seriousproblem" id="problem">
+                    <option value="-">Please select your opinion?</option>
+                    <option value="Climate Change">Climate Change</option>
+                    <option value="Loss of Biodiversity">Loss of Biodiversity</option>
+                    <option value="Deforestation">Deforestation</option>
+                    <option value="Water Pollution">Water Pollution </option>
+                </select>
+            </div>
+            <div>
+                <label for="rate">Rate How serious is that problem:</label>
+                <input name="rate" id="rate" class="shadow" type="range" min="1" max="5">
+            </div>
+            <div>
+                <label>Activities you regularly participate to protect environment:</label>
+            <div class="form-check"></div>
+                <input class="form-check-input shadow" name="activities" value="Recycling" id="activity1" type="checkbox">
+                <label class="form-check-label" for="activity1">Recycling</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input shadow" name="activities" value="Energy Conservation" id="activity2" type="checkbox">
+                <label class="form-check-label" for="activity2">Energy Conservation</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input shadow" name="activities" value="Planting" id="activity3" type="checkbox">
+                <label class="form-check-label" for="activity3">Planting</label>
+            </div>
+            <div>
+                <label for="solutions">Best Solution:</label>
+                <div class="form-check form-switch ">
+                    <input class="form-check-input shadow" name="solution" id="solution1" type="radio" value="Transition to Renewable Energy Sources" />
+                    <label class="form-check-label" for="solution1">Transition to Renewable Energy Sources</label>
+                </div>
+
+                <div class="form-check form-switch ">
+                    <input class="form-check-input shadow" name="solution" id="solution2" type="radio" value="solutionImplement Waste Reduction and Recycling Programs" />
+                    <label class="form-check-label" for="solution2">Implement Waste Reduction and Recycling Programs</label>
+                </div>
+
+                <div class="form-check form-switch ">
+                    <input class="form-check-input shadow" name="solution" id="solution3" type="radio" value="Increase Environmental Education and Awareness" />
+                    <label class="form-check-label" for="solution3">Increase Environmental Education and Awareness</label>
+                </div>
+            </div>
+            <div>
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message" class="form-control shadow" placeholder="Write your opinion....." id="message" rows="4"></textarea>
+            </div>
+            <button class="btn bg-warning-subtle shadow" type="submit">Submit</button>
+        </form>
+
+        <div class="col-sm-0 col-md-0" >
+        <div class="table-responsive">
+
+        <table class="table bg-dark" id="response_table">
+            <thead id="response_table_header">
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Problem</th>
+                    <th>Rate</th>
+                    <th>Activities</th>
+                    <th>Solution</th>
+                    <th>Message</th>
+                </tr>
+
+            </thead>
+            <tbody id = "response_table_body" >
+                
+            </tbody>
+
+        </table>
+        
+    </div>
+
+   
+    </div>
+
+</div>
+</section>
+<!-- form ends -->
+
+<section id="contact" class="justify-content-center align-items-center"> 
+    
+      <div class="offcanvas offcanvas-start bg-danger-subtle" id="demo">
+        <div class="offcanvas-header">
+          <p class="h2 text-uppercase offcanvas-title">Contact us</p>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          
+          <p class="lead">Phone call is available from <mark class="text-danger">9am to 5pm</mark> </p>
+          <p class="lead">You can leave us message, we will contact u as soon as possible.</p>
+
+          <address class="lead">
+            Save Earth Campagin
+            Block 234A ,34-01, BoonLay
+         </address>
+          
+    
+    <p ><a href="#" class="fa-solid fa-phone-volume"></a> : <a class=" h4 text-decoration-none" href="tel:+65 76425467">(+65) 76425467</a></p>
+    <p ><a href="#" class="fa-solid fa-envelope" ></a> : <a class=" h4 text-decoration-none" href="mailto:savethe.earth@example.com">savetheearth@example.com</a></p>
+          
+        </div>
+      </div>
+      
+      <div class="container-fluid mt-3">
+        <p class="h3">Contact Info</h3>
+        <p>U can enquire us from here:</p>
+        <button class="btn bg-danger-subtle mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+          Click Here
+        </button>
+      </div>
+      </section>
+
+      <section id="DailyMission">
+      <div class="d-flex justify-content-center align-items-center rounded min-vh-80">
+
+        <div class="text-center bg-dark text-white p-5">
+            <p class="h2 text-warning">Let's Start practising to make our world <br />a better place before 2024</p>
+            <p class="h4" id="timeHeading">Current Time</p>
+            <div id="dateNow">11/8/2021<br />2:45:12 p.m.</div>
+            <div id="countdown" class="d-flex justify-content-center">
+                <div class="text-center me-3">
+                    <span id="days">53</span><br />Days
+                </div>
+                <div class="text-center me-3">
+                    <span id="hrs">9</span><br />Hours
+                </div>
+                <div class="text-center me-3">
+                    <span id="mins">14</span><br />Minutes
+                </div>
+                <div class="text-center">
+                    <span id="secs">48</span><br />Seconds
+                </div>
+            </div>
+        </div>
+
+      
+
+</section>
+
+<section class="container mb-3 response_table">
+      <!-- Calendar here -->
+<div id="calendar" >
+      
+</div>
+</section>
+
+
+
+<!-- Pagination starts -->
+<section class="container ">
+    <ul class="pagination ">
+        <li class="page-item"><a id="previous-link" class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="../HTML/index.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="../HTML/aboutme.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="../HTML/SP.html">3</a></li>
+        <li class="page-item"><a class="page-link" href="../HTML/feedback.html">4</a></li>
+        
+      </ul> 
+  </section>
+  <!-- Pagination starts -->
+  
+
+</body>
+</html>
